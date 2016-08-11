@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Audio Player</title>
+  </head>
+
+  <body>
+
+    <div id="player-container">
+
+      <audio id="player-audio" src="http://v.giantbomb.com/podcast/Giant_Bombcast_442__Hair_Products_and_Turkey_Bacon-08-09-2016-0722626534.mp3"> </audio>
+
+      <div id="player-timeline" class="tooltip">
+        <span id="player-timeline-hover" class="tooltiptext"></span>
+
+        <div id="player-timeline-progress">
+          <div id="player-timeline-playhead"></div>
+        </div>
+      </div>
+
+      <div id="player-controls">
+        <button id="player-btn-rewind" class="player-btn rewind"></button>
+        <button id="player-btn-play" class=" player-btn play"></button>
+        <button id="player-btn-forward" class="player-btn forward"></button>
+
+        <div id="player-track-duration">0:00:00 / 0:00:00</div>
+
+        <div id="player-title-container" class="scroll">
+          <span id="player-title">Podcast Title - Episode Name</span>
+        </div>
+
+        <div id="player-volume-container">
+          <div id="player-volume-slider">
+            <div id="player-volume-level">
+              <div id="player-volume-head"></div>
+            </div>
+          </div>
+        </div>
+
+        <button id="player-btn-volume" class="player-btn right volume-up"></button>
+
+      </div>
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
